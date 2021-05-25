@@ -5,7 +5,7 @@ import BrandIcon from 'parts/iconText';
 
 export default function Header(props) {
     const getNavLinkClass = path => {
-        return props.location.pathname === path ? "active" : ""
+        return props.location.pathname === path ? " active" : " "
     };
 
     
@@ -33,7 +33,7 @@ export default function Header(props) {
                         </Button>
                         </li>
                         <li className={`nav-item${getNavLinkClass("/agents")}`}>
-                        <Button className="nav-link" type="link" href="agents">
+                        <Button className="nav-link" type="link" href="/agents">
                             Agents
                         </Button>
                         </li>
