@@ -160,7 +160,7 @@ section {
       transform: scale(1.1);
       transition: 0.5s transform ease-in-out;
       z-index: 2;
-      @include gradient-y(rgba($black, 0), rgba($black, 0.51), 0%, 100%);
+      @include gradient-y(rgba($black, 0), rgba($black, 0.30), 0%, 100%);
     }
 
     .img-wrapper {

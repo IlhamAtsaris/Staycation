@@ -1,9 +1,9 @@
 import React from "react";
-import ImageHero from "assets/image/img-hero.jpg";
-import ImageHero_ from "assets/image/img-hero-frame.jpg";
-import IconCities from "assets/image/icons/icon_cities.svg";
-import IconTreasure from "assets/image/icons/icon_treasure.svg";
-import IconTraveler from "assets/image/icons/icon_traveler.svg";
+import ImageHero from "assets/images/img-hero.jpg";
+import ImageHero_ from "assets/images/img-hero-frame.jpg";
+import IconCities from "assets/images/icons/icon_cities.svg";
+import IconTreasure from "assets/images/icons/icon_treasure.svg";
+import IconTraveler from "assets/images/icons/icon_traveler.svg";
 import numberFormat from "utils/formatNumber"
 
 import Button from "elements/button";
