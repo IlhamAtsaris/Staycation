@@ -7,7 +7,7 @@ import IconTraveler from "assets/images/icons/icon_traveler.svg";
 import numberFormat from "utils/formatNumber"
 
 import Button from "elements/button";
-export default function Hero(props) {
+function Hero(props) {
   function ShowMostPicked() {
     window.scrollTo({
       top: props.refMostPicked.current.offsetTop - 30,
@@ -92,3 +92,5 @@ export default function Hero(props) {
     </section>
   );
 }
+
+export default Hero;

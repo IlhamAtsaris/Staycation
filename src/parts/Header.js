@@ -3,7 +3,8 @@ import React from 'react'
 import Button from 'elements/button';
 import BrandIcon from 'parts/iconText';
 
-export default function Header(props) {
+
+function Header(props) {
     const getNavLinkClass = path => {
         return props.location.pathname === path ? " active" : " "
     };
@@ -45,3 +46,5 @@ export default function Header(props) {
     )
     
 }
+
+export default Header;
