@@ -1,10 +1,12 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import Button from "elements/button";
 
 function Categories({ data }) {
   return data.map((category, index1) => {
     return (
       <section className="container" key={`category-${index1}`}>
+        <Fade>
         <h4 className="mb-3 font-weight-medium">{category.name}</h4>
         <div className="container-grid">
           {category.items.length === 0 ? (
@@ -20,6 +22,7 @@ function Categories({ data }) {
                   className="item column-3 row-1"
                   key={`category-${index1}-item-${index2}`}
                 >
+                  <Fade bottom delay={300* index2}>
                   <div className="card">
                     {item.isPopular && (
                       <div className="tag">
@@ -47,11 +50,13 @@ function Categories({ data }) {
                       </span>
                     </div>
                   </div>
+                  </Fade>
                 </div>
               );
             })
           )}
         </div>
+        </Fade>
       </section>
     );
   });
