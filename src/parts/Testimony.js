@@ -7,7 +7,7 @@ import TestimonyAccent from 'assets/images/testimonial-landingpages-frame.jpg'
 function Testimony({data}) {
     return (
         <section className="container">
-           <div className="row align-items-center">
+           <div className="row align-items-center" style={{marginBottom:100}}>
                <div className="col-auto" style={{marginRight:60}}>
                 <div className="testimonial-hero" style={{margin:`30px 0 0 30px`}}>
                     <img className="position-absolute" src={data.imageUrl} alt="Testimonial" style={{zIndex:1}} />

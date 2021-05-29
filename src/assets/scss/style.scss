@@ -205,15 +205,20 @@ section {
   }
 }
 
-.testimonial-hero,
+.testimonial-hero {
+  width: 360px;
+  height: 500px;
+  padding-bottom: 50px;
+}
 .testimonial-hero img {
   width: 360px;
   height: 500px;
 }
 
 footer {
-  border-top: 1px solid $gray-200;
   padding-top: 50px;
+  border-top: 1px solid $gray-200;
+  
 
   .brand-tagline {
     margin-top: 8px;
@@ -236,7 +241,7 @@ footer {
     }
   }
   .copyrights {
-    margin: 50px 0;
+    margin: 40px 0;
     font-weight: 300;
     color: $gray-500;
   }
