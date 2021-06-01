@@ -3,6 +3,7 @@ import Header from 'parts/Header';
 import PageDetailTitle from 'parts/PageDetailTitle';
 import FeaturedImage from 'parts/FeaturedImage';
 import PageDetailDescription from 'parts/PageDetailDescription';
+import BookingForm from 'parts/BookingForm';
 
 import ItemDetails from 'json/itemDetails.json'
 
@@ -33,7 +34,7 @@ class DetailPage extends Component{
                         <PageDetailDescription data={ItemDetails}></PageDetailDescription>
                     </div>
                     <div className="col-5">
-                        Booking
+                        <BookingForm itemDetails={ItemDetails}></BookingForm>
                     </div>
                 </div>
             </section>

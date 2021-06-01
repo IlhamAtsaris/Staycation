@@ -1,4 +1,4 @@
-function number () {
+function number (number) {
     const formatNumbering = new Intl.NumberFormat("id-ID");
     return formatNumbering.format(number);
   };
