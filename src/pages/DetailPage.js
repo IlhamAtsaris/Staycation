@@ -4,8 +4,13 @@ import PageDetailTitle from 'parts/PageDetailTitle';
 import FeaturedImage from 'parts/FeaturedImage';
 import PageDetailDescription from 'parts/PageDetailDescription';
 import BookingForm from 'parts/BookingForm';
+import Categories from 'parts/Categories';
+import Testimonials from 'parts/Testimony'
+import Footer from 'parts/footer';
 
-import ItemDetails from 'json/itemDetails.json'
+import ItemDetails from 'json/itemDetails.json';
+import Fade from 'react-reveal/Fade';
+
 
 class DetailPage extends Component{
 
@@ -21,7 +26,7 @@ class DetailPage extends Component{
       
         return(
             <>
-            <Header {...this.props}></Header>
+            <Header {...this.props}/>
             <PageDetailTitle
                 breadcrumb={breadcrumb}
                 data={ItemDetails}
@@ -30,14 +35,21 @@ class DetailPage extends Component{
             <FeaturedImage data={ItemDetails.imageUrls}></FeaturedImage>
             <section className="container">
                 <div className="row">
-                    <div className="col-7 pr-5">
+                    <Fade left>
+                    <div className="col-7 pr-5 mt-2">
                         <PageDetailDescription data={ItemDetails}></PageDetailDescription>
                     </div>
-                    <div className="col-5">
+                    </Fade>
+                    <Fade right delay = {1000}>
+                    <div className="col-5 mt-2">
                         <BookingForm itemDetails={ItemDetails}></BookingForm>
                     </div>
+                    </Fade>
                 </div>
             </section>
+            <Categories data={ItemDetails.categories}/>
+            <Testimonials data={ItemDetails.testimonial}/>
+            <Footer/>
             </>
         )
     }   
