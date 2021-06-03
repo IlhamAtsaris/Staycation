@@ -5,7 +5,7 @@ import propTypes from "prop-types";
 import "./index.scss";
 
 function Numbering({ style, className, data, current }) {
-  const KeyOfData = Object.keys(data);
+  const KeysOfData = Object.keys(data);
   return (
     <Fade>
       <ol className={["stepper", className].join(" ")} style={style}>
